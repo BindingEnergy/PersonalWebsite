@@ -286,3 +286,84 @@ button:hover{
     font-size: 12px;
   }
 }
+
+@media only screen and (orientation:landscape) and (max-height:700px)
+{
+  h1{
+    font-size: 2.7rem;
+  }
+
+  h4{
+    font-size: 16px;
+  }
+
+  .brief{
+    position: absolute;
+    top: 52%;
+    left: 15%;
+  }
+
+  button{
+    margin-right: 70%;
+    font-size: 12px;
+  }
+
+  .arrow{
+    width: 28px;
+    height: 7px;
+  }
+}
+
+@media (orientation:landscape) and (max-height:400px)
+{
+  h1{
+    font-size: 2.7rem;
+  }
+
+  h4{
+    font-size: 16px;
+  }
+
+  .brief{
+    position: absolute;
+    top: 69%;
+    left: 15%;
+  }
+
+  button{
+    margin-left: 47%;
+    font-size: 12px;
+  }
+
+  .arrow{
+    width: 28px;
+    height: 7px;
+  }
+}
+
+@media (orientation:landscape) and (max-height:550px)
+{
+  h1{
+    font-size: 2.7rem;
+  }
+
+  h4{
+    font-size: 16px;
+  }
+
+  .brief{
+    position: absolute;
+    top: 69%;
+    left: 15%;
+  }
+
+  button{
+    margin-left: 47%;
+    font-size: 12px;
+  }
+
+  .arrow{
+    width: 28px;
+    height: 7px;
+  }
+}
