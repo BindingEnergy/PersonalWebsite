@@ -18,28 +18,28 @@
   color: inherit;
 }
 
-.logo {
-  font-weight: bolder;
-  font-size: 1.75rem;
-}
-
 nav ul {
   display: flex;
   gap: 4px;
   list-style-type: none;
 }
 
-.a, .b, .c {
+.a, .b, .c, .d {
   padding: 5px;
 }
 
-.a:visited, .b:visited, .c:visited {
+.a:visited, .b:visited, .c:visited, .d:visited {
   color: white;
 }
 
-.a:hover, .b:hover, .c:hover {
+.a:hover, .b:hover, .c:hover, .d:hover {
   zoom: 105%;
   color: #6700ee;
+}
+
+.logo {
+  font-weight: bolder;
+  font-size: 1.75rem;
 }
 
 h1 {
@@ -64,6 +64,7 @@ span {
   border: hidden;
   position: absolute;
   top: 30%;
+  margin-left: 0%;
 }
 
 .brief {
@@ -75,12 +76,20 @@ span {
 
 .brief:hover {
   zoom: 110%;
+  animation: Rotate 2s forwards 0s infinite alternate both;
+}
+
+@keyframes Rotate { 
+  100%{
+    transform: rotate(180deg);
+  }
 }
 
 .image {
   position: absolute;
   top: 25%;
   left: 75%;
+  max-width: 100%;
 }
 
 .logo:hover {
@@ -136,12 +145,70 @@ button {
   font-size: 20px;
   font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
+  display: block;
+  margin-left: 50%;
+  margin-right: 50%;
   padding: 10px;
   cursor: pointer;
   position: absolute;
   top: 85%;
-  left: 48%;
 }
 button:hover{
   zoom: 105%;
+}
+
+@media only screen and (max-width:800px)
+{
+  .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1{
+    font-size: 50px;
+    text-align: left;
+  }
+  h4{
+    font-size: 15px;
+  }
+  .brief{
+    position: absolute;
+    top: 50%;
+  }
+  .logo{
+    font-size: 1.6rem;
+    font-weight: bolder;
+  }
+  button{
+    font-size: 18px;
+  }
+  .arrow{
+    width: 35px;
+    height: 10px;
+  }
+}
+
+
+@media only screen and (max-width:530px)
+{
+  h1{
+    font-size: 2.1rem;
+    text-align: left;
+  }
+  h4{
+    font-size: 12px;
+  }
+  .brief{
+    position: absolute;
+    top: 45%;
+  }
+  .logo{
+    font-size: 1.25rem;
+    font-weight: bolder;
+  }
+  button{
+    font-size: 12px;
+  }
 }
