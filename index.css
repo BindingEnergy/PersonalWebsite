@@ -94,7 +94,7 @@ span {
 .brief {
   border: hidden;
   position: absolute;
-  top: 59%;
+  top: 62%;
   left: 20%;
 }
 
@@ -263,3 +263,26 @@ button:hover{
   }
 }
 
+@media only screen and (max-width:350px)
+{
+  h1{
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  h4{
+    font-size: 7px;
+  }
+  .brief{
+    position: absolute;
+    top: 48%;
+  }
+  .logo{
+    top: 4%;
+    font-size: 1.25rem;
+    font-weight: bolder;
+  }
+  button{
+    margin-right: 60%;
+    font-size: 12px;
+  }
+}
