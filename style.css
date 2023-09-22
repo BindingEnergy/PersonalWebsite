@@ -1,0 +1,199 @@
+*{
+    background-color: black;
+}
+
+.navigation {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    color: white;
+    font-family: 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+  
+  .navigation a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+  
+nav ul {
+    display: flex;
+    gap: 7px;
+    list-style-type: none;
+}
+
+.text{
+    position: absolute;
+    top: 55%;
+}
+
+.text h1{
+    color: white;
+    font-family: 'Poppins', Times, serif;
+    font-size: 49px;
+    text-align: left;
+}
+
+.text span{
+    color: blue;
+    animation: colourchange 5s ease 0s infinite alternate both;
+}
+
+@keyframes colourchange {
+    0%{
+      color: red;
+    }  
+    10%{
+      color: orange;
+    }
+    20%{
+      color: greenyellow;
+    }
+    30%{
+      color: cyan;
+    }
+    40%{
+      color: rgb(166, 87, 231);
+    }
+    50%{
+      color: #7730d4;
+    }
+    60%{
+      color: #5c00d4;
+    }
+    70%{
+      color: rgb(30, 3, 124);
+    }
+    80%{
+      color: rgb(64, 115, 255);
+    }
+    90%{
+      color: rgb(103, 230, 134);
+    }
+    95%{
+      color: rgb(189, 233, 88);
+    }
+    100%{
+      color: rgb(255, 153, 0);
+    }
+}
+
+.intro{
+    position: absolute;
+    top: 73%;
+    left: 5%;
+}
+
+.brief{
+    color: white;
+    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.image1 {
+    position: absolute;
+    top: 23%;
+    left: 4%;
+}
+ .image1 img{
+    height: auto;
+    width: 400px;
+}
+
+.image2{
+    display: none;
+}
+.image2 img{
+    height: 275px;
+    position: absolute;
+    top: 33%;
+    left: 71%;
+}
+
+button {
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 18px;
+    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 87%;
+    left: 39%;
+}
+
+.a, .b, .c, .d {
+    padding: 5px;
+}
+  
+.a:visited, .b:visited, .c:visited, .d:visited {
+    color: white;
+}
+  
+.a:hover, .b:hover, .c:hover, .d:hover {
+    zoom: 105%;
+    color: #6700ee;
+}
+
+@media only screen and (max-height:750px) and (max-width:390px)
+{
+    .text{
+        top: 50%;
+    }
+    .text h1{
+        color: white;
+        font-family: 'Poppins', Times, serif;
+        font-size: 42px;
+        text-align: left;
+    }
+
+    .brief{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:2048px),(min-height:1000px)
+{
+    .text h1{
+        color: white;
+        font-family: 'Poppins', Times, serif;
+        font-size: 100px;
+        text-align: left;
+    }
+
+    .text{
+        position: absolute;
+        top: 33%;
+    }
+
+    .navigation {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        color: white;
+        font-family: 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: medium;
+    }
+    .image1 {
+        display: none;
+    }
+
+    .image2{
+        display: contents;
+    }
+
+    button{
+        top: 90%;
+        left: 50%;
+    }
+
+    .logo{
+        font-size: 35px;
+    }    
+}
