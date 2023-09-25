@@ -93,7 +93,11 @@ nav ul {
     font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-size: 25px;
+<<<<<<< HEAD
     width: 15ch;
+=======
+    width: 13ch;
+>>>>>>> 95ef6240caee7472f31dbac5578a77e984c77d70
     animation: typing 2s steps(15), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
