@@ -84,6 +84,8 @@ nav ul {
     position: absolute;
     top: 73%;
     left: 5%;
+    display: grid;
+    place-items: center;
 }
 
 .brief{
@@ -91,7 +93,24 @@ nav ul {
     font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-size: 25px;
+    width: 13ch;
+    animation: typing 2s steps(15), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
 }
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
 
 .image1 {
     position: absolute;
